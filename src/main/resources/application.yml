@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: study-20
+  datasource:
+    url: jdbc:log4jdbc:mysql://localhost:3306/demo_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: 1234
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy # com.mysql.cj.jdbc.Driver
+  web:
+    resources:
+      static-locations: classpath:/static/
+  mvc:
+    view:
+      prefix: /static/
+      suffix: .html
+
+logging:
+  level:
+    jdbc: debug
+    jdbc.sqlonly: debug
+    jdbc.sqltiming: debug
+    jdbc.resultset: debug
+    jdbc.audit: off
+    jdbc.connection: off
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  # MyBatis ?? XML ?? ??
+  configuration:
+    map-underscore-to-camel-case: true  # DB ??? snake_case ? Java camelCase ?? ??
+    # log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl  # MyBatis ?? SLF4J ??

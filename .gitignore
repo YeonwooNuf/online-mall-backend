@@ -1,0 +1,94 @@
+# ============================================
+# ☕ Java / Spring Boot 기본
+# ============================================
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.tmp
+*.bak
+*.swp
+*.lock
+hs_err_pid*.log
+
+# ============================================
+# 💼 IDE 설정 파일
+# ============================================
+
+# ▶ Eclipse / Spring Tool Suite (STS)
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# ▶ IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# ▶ NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ▶ VSCode
+.vscode/
+
+# ============================================
+# 🐘 Gradle
+# ============================================
+.gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+buildSrc/.gradle/
+
+# Gradle Wrapper
+gradle-app.setting
+gradle-wrapper.jar
+gradle-wrapper.properties
+.gradle-cache/
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# ============================================
+# 🔐 보안 & OS 무관 항목
+# ============================================
+*.env
+*.key
+*.pem
+*.crt
+*.der
+*.p12
+*.db
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ============================================
+# ✅ 추가 권장 (사용자 선택)
+# ============================================
+logs/
+node_modules/       # 프론트 통합 프로젝트 시 포함
+npm-debug.log*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
