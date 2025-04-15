@@ -13,6 +13,9 @@ spring:
     view:
       prefix: /static/
       suffix: .html
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/online_mall
 
 logging:
   level:
